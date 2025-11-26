@@ -1,0 +1,40 @@
+name: Java CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Compile Java files
+        run: |
+          mkdir -p out
+          javac -d out $(find . -name "*.java")
+
+      - name: Run NameValidator test
+        run: |
+          cd out
+          # Example: simple inline test of your class
+          echo 'public class Test {
+              public static void main(String[] args) {
+                  System.out.println(NameValidator.isValidName("John"));
+                  System.out.println(NameValidator.isValidName("123"));
+              }
+          }' > Test.java
+
+          javac Test.java
+          java Test
