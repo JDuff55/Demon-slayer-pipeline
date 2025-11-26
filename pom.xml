@@ -55,6 +55,46 @@
                 </executions>
             </plugin>
 
+            <!-- PMD -->
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-pmd-plugin</artifactId>
+            <version>3.21.0</version>
+            <configuration>
+                <printFailingErrors>true</printFailingErrors>
+                <failOnViolation>false</failOnViolation>
+                <linkXRef>false</linkXRef>
+            </configuration>
+            <executions>
+                <execution>
+                    <phase>verify</phase>
+                    <goals>
+                        <goal>check</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
+
+        <!-- SpotBugs -->
+        <plugin>
+            <groupId>com.github.spotbugs</groupId>
+            <artifactId>spotbugs-maven-plugin</artifactId>
+            <version>4.8.2</version>
+            <configuration>
+                <failOnError>false</failOnError>
+                <effort>max</effort>
+                <threshold>Low</threshold>
+            </configuration>
+            <executions>
+                <execution>
+                    <phase>verify</phase>
+                    <goals>
+                        <goal>check</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
+
         </plugins>
     </build>
 
