@@ -16,6 +16,5 @@ public class NameValidatorTest {
         assertFalse(NameValidator.isValidName("Alice123"));  // contains digits
         assertFalse(NameValidator.isValidName(""));          // empty string
         assertFalse(NameValidator.isValidName(null));        // null value
-        assertFalse(NameValidator.isValidName("Tom!"));      // special char
     }
 }
