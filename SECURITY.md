@@ -14,8 +14,35 @@ currently being supported with security updates.
 
 ## Reporting a Vulnerability
 
-Use this section to tell people how to report a vulnerability.
+if you discover a security vulnerability, please follow these steps:
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+1. ** Do not open a public issue**: Instead, report the issue directly to us via email at:
+- L00174553@atu.ie
+
+2. **Provide detailed information**: Include as much detail as possible to help us reproduce and resolve the issue, such as:
+- Affected version(s)
+- Steps to reproduce the vulnerability
+- Any Relevant code snippets or logs
+
+3. **Expected Response Time**: We aim to respond to all secuirty reports within **2 business days** and provide a resolution or mitigation plan withon **5 business days**
+
+---
+
+## Disclosure Policy
+
+We follow a resonsible disclosure process:
+
+1. We will work with you to validate and resolve the vulnerability.
+2. Once the issue is resolved, we will publicly disclose the details of the vulnerability.
+
+---
+
+## Security Best Practices
+
+We recommend all contributors and users to follow these best practices:
+- Use the latest version of the project
+- Regularly update dependencies
+- Report suspicious activites or vulnerabilities promptly.
+
+---
+
