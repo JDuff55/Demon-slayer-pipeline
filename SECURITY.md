@@ -17,7 +17,7 @@ currently being supported with security updates.
 if you discover a security vulnerability, please follow these steps:
 
 1. ** Do not open a public issue**: Instead, report the issue directly to us via email at:
-- L00174553@atu.ie
+- l00174553@atu.ie
 
 2. **Provide detailed information**: Include as much detail as possible to help us reproduce and resolve the issue, such as:
 - Affected version(s)
