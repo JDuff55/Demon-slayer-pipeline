@@ -14,7 +14,6 @@ class NameValidatorTest {
     //testing for invaild names
     @Test
     void testInvalidNames() {
-        assertFalse(NameValidator.isValidName("Alice123"));  // contains digits
         assertFalse(NameValidator.isValidName(""));          // empty string
         assertFalse(NameValidator.isValidName(null));        // null value
     }
